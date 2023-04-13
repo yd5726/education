@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>education - 교육원 소개</title>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/re_style.css">
+    <link rel="stylesheet" href="../assets/css/edu_intro_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="header clearfix">
+                    <h1 class="edu_logo"><a href="../index.html">평생교육원</a></h1>
+                    <nav class="nav clearfix">
+                        <ul class="clearfix">
+                            <li><a href="../edu_intro/edu_intro01.html">교육원소개</a></li>
+                            <li><a href="#">교육과정소개</a></li>
+                            <li><a href="#">수강신청안내</a></li>
+                            <li><a href="../commu/community01.html">커뮤니티</a></li>
+                        </ul>
+                        <ul class="clearfix loginJoin">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                        </ul>
+                    </nav>
+                    <nav id="mNav">
+                        <h2 class="ir_so">mNav</h2>
+                        <a class="ham"><span></span></a>
+                    </nav>
+                    <div class="mNav">
+                        <ul>
+                            <li><a href="../edu_intro/edu_intro01.html">교육원소개</a></li>
+                            <li><a href="#">교육과정소개</a></li>
+                            <li><a href="#">수강신청안내</a></li>
+                            <li><a href="../commu/community01.html">커뮤니티</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+    <section id="banner">
+        <div id="gray_box"></div>
+        <div class="container">
+            <div class="row">
+                <div class="banner">
+                    <h3>오시는 길</h3>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="../edu_intro/edu_intro01.html">인사말</a></li>
+                            <li><a href="../edu_intro/edu_intro02.html">교육목표 및 Vision</a></li>
+                            <li><a href="../edu_intro/edu_intro03.html">조직</a></li>
+                            <li><a href="../edu_intro/edu_intro04.html">오시는 길</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //banner -->
+    <section id="map">
+        <div class="container">
+            <div class="row">
+                <div class="map">
+                    <h2 class="ir_so">오시는 길</h2>
+                    <div id="map_con"></div>
+                    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=67b6e066e5b25b8f0d213371789974a7"></script>
+                    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=67b6e066e5b25b8f0d213371789974a7&libraries=services"></script>
+                    <script>
+                        // 지도를 표시할 div 
+                        var container = document.getElementById('map_con');
+                        
+                        //지도의 중심좌표
+                        var options = {
+                            center: new kakao.maps.LatLng(36.000477592184986, 126.78386140186916),
+                            level: 3 //지도의 레벨(확대, 축소 정도)
+                        };
+
+                        //지도 생성 및 객체 리턴
+                        var map = new kakao.maps.Map(container, options);
+
+                        // 마커가 표시될 위치
+                        var markerPosition  = new kakao.maps.LatLng(35.998301558079824, 126.78536180822289); 
+
+                        // 마커를 생성
+                        var marker = new kakao.maps.Marker({
+                            position: markerPosition
+                        });
+
+                        // 마커가 지도 위에 표시되도록 설정
+                        marker.setMap(map);
+                    </script>
+                    <div class="desc">
+                        <ul>
+                            <li>
+                                <strong>· TEL : 063-450-8363</strong>
+                                /<strong>FAX : 063-450-8366</strong>
+                            </li>
+                            <li><strong>· 주변 버스정류장</strong></li>
+                            <li>도암마을 : 35, 39 / 마동마을 : 35, 39, 52, 53, 54 / 군장대학교 : 35, 39, 52, 53, 54</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //map -->
+    <footer id="footer">
+        <div class="container">
+           <div class="row">
+              <div class="footer clearfix">
+                 <div class="btm_menu">
+                    <ul class="clearfix">
+                       <li><a href="#">개인정보처리방침</a></li>
+                       <li><a href="#">오시는길</a></li>
+                       <li><a href="#">국외여행인솔자 인력관리시스템</a></li>
+                       <li><a href="#">(사)한국대학평생교육협의회</a></li>
+                    </ul>
+                 </div>
+                 <div class="copy">
+                    <p>
+                       (54045) 전북 군산시 성산면 군장대길 13<br />
+                       COPYRIGHT ⓒ 2023 _ _ UNIVERSITY COLLEGE.<br />
+                       ALL RIGHTS RESERVED.</p>
+                 </div>
+                 <div class="tel">
+                    <ul class="clearfix">
+                       <li>
+                          <p>
+                             <a href="#" target="_blank">민간자격증</a>
+                          </p>
+                          <span>
+                             Tel.063-450-8370<br />
+                             Fax.063-442-3878
+                          </span>
+                       </li>
+                       <li>
+                          <p>
+                             <a href="#" target="_blank">평생교육원</a>
+                          </p>
+                          <span>
+                             Tel.063-450-8363<br />
+                             Fax.063-450-8371
+                          </span>
+                       </li>
+                       <li>
+                          <p>
+                             <a href="#" target="_blank">학점은행제</a>
+                          </p>
+                          <span>
+                             Tel.063-450-8370<br />
+                             Fax.063-450-8371
+                          </span>
+                       </li>
+                       <li>
+                          <p>
+                             <a href="#" target="_blank">성인학습센터</a>
+                          </p>
+                          <span>
+                             Tel.063-450-8446<br />
+                             Fax.063-450-8371
+                          </span>
+                       </li>
+                    </ul>
+                 </div>
+              </div>
+           </div>
+        </div>
+    </footer>
+     <!-- //footer -->
+    <script>
+        const mNav_id = document.querySelector('#mNav');
+        const mNav_class = document.querySelector('.mNav');
+
+        mNav_id.addEventListener('click', function () {
+            mNav_id.classList.toggle('show');
+            mNav_class.classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>

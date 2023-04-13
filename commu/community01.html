@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>education - 커뮤니티</title>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/re_style.css">
+    <link rel="stylesheet" href="../assets/css/comu_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="header clearfix">
+                    <h1 class="edu_logo"><a href="../index.html">평생교육원</a></h1>
+                    <nav class="nav clearfix">
+                        <ul class="clearfix">
+                            <li><a href="../edu_intro/edu_intro01.html">교육원소개</a></li>
+                            <li><a href="#">교육과정소개</a></li>
+                            <li><a href="#">수강신청안내</a></li>
+                            <li><a href="../commu/community01.html">커뮤니티</a></li>
+                        </ul>
+                        <ul class="clearfix loginJoin">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                        </ul>
+                    </nav>
+                    <nav id="mNav">
+                        <h2 class="ir_so">mNav</h2>
+                        <a class="ham"><span></span></a>
+                    </nav>
+                    <div class="mNav">
+                        <ul>
+                            <li><a href="../edu_intro/edu_intro01.html">교육원소개</a></li>
+                            <li><a href="#">교육과정소개</a></li>
+                            <li><a href="#">수강신청안내</a></li>
+                            <li><a href="../commu/community01.html">커뮤니티</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+    <section id="banner">
+        <div id="gray_box"></div>
+        <div class="container">
+            <div class="row">
+                <div class="banner">
+                    <h3>커뮤니티</h3>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="../commu/community01.html">공지사항</a></li>
+                            <li><a href="#">시간표</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //banner -->
+    <section id="board">
+        <div class="container">
+            <div class="row">
+                <div class="board">
+                    <h2 class="ir_so">공지사항</h2>
+                    <form name="boardSearchForm" class="board_search_form clearfix" method="post" autocomplete="off">
+                        <div class="search_box">
+                            <select name="so" title="검색어 선택">
+                                <option value="title">제목</option>
+                                <option value="writer">작성자</option>
+                            </select>
+                            <input type="text" name="sv" title="검색어 입력" onkeydown="if(event.keyCode==13){fn_search();}">
+                            <button type="button" class="search_btn" onclick="fn_search();">검색</button>
+                            <button type="button" class="reset_btn" onclick="gf_reset();">전체</button>
+                        </div>
+                    </form>
+                    <form action="#" name="listForm" id="listForm" method="post" autocomplete="off">
+                        <span class="board_total_count">
+                            전체<b>5</b>건
+                        </span>
+                        <table class="list_table">
+                            <colgroup>
+                                <col width="10%">
+                                <col width="*">
+                                <col width="15%">
+                                <col width="15%">
+                                <col width="15%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>순번</th>
+                                    <th>제목</th>
+                                    <th>작성자</th>
+                                    <th>조회수</th>
+                                    <th>입력일시</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>5</td>
+                                    <td>
+                                        <div class="tit" data-depth="1">
+                                            <a class="link" title="상세보기">
+                                                평생교육원 재택근무 실시 안내
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>담당자</td>
+                                    <td>24</td>
+                                    <td>2022-02-09</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>
+                                        <div class="tit" data-depth="1">
+                                            <a class="link" title="상세보기">
+                                                2022년 농촌융복합산업 현장실습형 농장설계 과정 수강생 모집공고
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>담당자</td>
+                                    <td>24</td>
+                                    <td>2022-02-09</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        <div class="tit" data-depth="1">
+                                            <a class="link" title="상세보기">
+                                                9/15 평생교육원 이전안내입니다
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>담당자</td>
+                                    <td>24</td>
+                                    <td>2022-02-09</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <div class="tit" data-depth="1">
+                                            <a class="link" title="상세보기">
+                                                본교 개교기념일로 인한 평생교육원 휴무일(09/30) 안내
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>담당자</td>
+                                    <td>24</td>
+                                    <td>2022-02-09</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <div class="tit" data-depth="1">
+                                            <a class="link" title="상세보기">
+                                                평생교육원 동계방학기간 단축근무 실시 안내
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>담당자</td>
+                                    <td>24</td>
+                                    <td>2022-02-09</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="paging">
+                            <a href="javascript:gf_movePage(1);" class="page_btn page_num current_page">
+                                <span>1</span>
+                            </a>
+                            <a href="javascript:gf_movePage(2);" class="page_btn page_num">
+                                <span>2</span>
+                            </a>
+                            <a href="javascript:gf_movePage(1);" class="page_btn page_last">
+                                <img src="../assets/img/icon02.png" alt="마지막페이지로 이동" class="lbtn_img">
+                            </a>
+                        </div>
+                        <input type="hidden" name="sId">
+                        <input type="hidden" name="sCode" value="community01">
+                        <input type="hidden" name="sCate" value="ALL">
+                        <input type="hidden" name="checkedSId">
+                        <input type="hidden" id="_search_cp_" name="cp" value="1">
+                        <input type="hidden" id="_search_so_" name="so">
+                        <input type="hidden" id="_search_sv_" name="sv">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //board -->
+    <footer id="footer">
+        <div class="container">
+           <div class="row">
+              <div class="footer clearfix">
+                 <div class="btm_menu">
+                    <ul class="clearfix">
+                       <li><a href="#">개인정보처리방침</a></li>
+                       <li><a href="#">오시는길</a></li>
+                       <li><a href="#">국외여행인솔자 인력관리시스템</a></li>
+                       <li><a href="#">(사)한국대학평생교육협의회</a></li>
+                    </ul>
+                 </div>
+                 <div class="copy">
+                    <p>
+                       (54045) 전북 군산시 성산면 군장대길 13<br />
+                       COPYRIGHT ⓒ 2023 _ _ UNIVERSITY COLLEGE.<br />
+                       ALL RIGHTS RESERVED.</p>
+                 </div>
+                 <div class="tel">
+                    <ul class="clearfix">
+                       <li>
+                          <p>
+                             <a href="#" target="_blank">민간자격증</a>
+                          </p>
+                          <span>
+                             Tel.063-450-8370<br />
+                             Fax.063-442-3878
+                          </span>
+                       </li>
+                       <li>
+                          <p>
+                             <a href="#" target="_blank">평생교육원</a>
+                          </p>
+                          <span>
+                             Tel.063-450-8363<br />
+                             Fax.063-450-8371
+                          </span>
+                       </li>
+                       <li>
+                          <p>
+                             <a href="#" target="_blank">학점은행제</a>
+                          </p>
+                          <span>
+                             Tel.063-450-8370<br />
+                             Fax.063-450-8371
+                          </span>
+                       </li>
+                       <li>
+                          <p>
+                             <a href="#" target="_blank">성인학습센터</a>
+                          </p>
+                          <span>
+                             Tel.063-450-8446<br />
+                             Fax.063-450-8371
+                          </span>
+                       </li>
+                    </ul>
+                 </div>
+              </div>
+           </div>
+        </div>
+    </footer>
+     <!-- //footer -->
+    <script>
+        const mNav_id = document.querySelector('#mNav');
+        const mNav_class = document.querySelector('.mNav');
+
+        mNav_id.addEventListener('click', function () {
+            mNav_id.classList.toggle('show');
+            mNav_class.classList.toggle('show');
+        });
+    </script>
+    <script>
+        // 검색
+        function fn_search(){
+            var searchForm = document.boardSearchForm;
+            document.getElementById("_search_so_").value = searchFrm.so.value;
+			document.getElementById("_search_sv_").value = searchFrm.sv.value;
+			gf_movePage(1);
+        }
+
+        // 페이지 이동
+        function gf_movePage(cp) {
+            $("#_search_cp_").val(cp);
+            var frm = $("#_search_cp_").parents("form");
+            frm.action = gf_getPathName();
+            frm.submit();
+        }
+
+        //검색 초기화
+        function gf_reset() {
+            document.getElementById("_search_so_").value = "";
+            document.getElementById("_search_sv_").value = "";
+            document.getElementById("_search_sd_").value = "";
+            document.getElementById("_search_ed_").value = "";
+            document.getElementById("_search_sv_").value = "";
+            document.getElementById("_search_oc_").value = "";
+            document.getElementById("_search_ob_").value = "";
+            gf_movePage(1);
+        }
+
+        //순서 변경
+        function gf_changeOrder(oc) {
+            if(document.getElementById("_search_oc_").value == oc && document.getElementById("_search_ob_").value == 'desc'){
+                document.getElementById("_search_ob_").value = 'asc';
+            } else if(document.getElementById("_search_oc_").value == oc && document.getElementById("_search_ob_").value == 'asc'){
+                document.getElementById("_search_oc_").value = '';
+                document.getElementById("_search_ob_").value = '';
+            } else {
+                document.getElementById("_search_oc_").value = oc;
+                document.getElementById("_search_ob_").value = 'desc';
+            }		
+            gf_movePage(1);
+        }
+    </script>
+    <script>
+        /**
+         * ========================
+         * 공통 UTIL JS
+         * ========================
+         * gf_isNull           : 입력값이 null에 해당하는 경우 모두를 한번에 체크
+         * gf_getBrowser	   : 브라우저 return
+         * gf_nvl              : 입력값이 null인 경우에 지정한 값으로 반환
+         * gf_toString         : 입력값을 String으로 변환
+         * gf_toNumber	       : 입력값을 숫자값으로 변환
+         * gf_indexOf          : 전체 문자열 중 특정 문자열이 포함된 위치를 반납
+         * gf_lastIndexOf      : 전체 문자열 중 마지막에서 특정 문자열이 포함된 위치를 반납
+         * gf_length           : 입력값 형태에 따라서 길이 또는 범위를 구하는 함수
+         * gf_getHref		   : 현재페이지의 Href를 가져옴
+         * gf_getHost		   : 현재페이지의 호스트명 가져옴
+         * gf_getPort		   : 현재페이지의 포트번호를 가져옴
+         * gf_getHostName	   : 현재페이지의 호스트명과 포트번호 가져옴
+         * gf_getPathName	   : 현재페이지의 PathName을 가져옴
+         * gf_getProtocol	   : 현재페이지의 Protocal을 가져옴
+         * gf_moveHref		   : 특정 URL로 이동
+         * gf_movePath		   : 특정 Path로 이동
+         * gf_moveHome		   : 메인으로 이동
+         * gf_trim             : 입력된 문자열의 좌우측 공백을 제거한 문자열을 구함
+         * gf_getFileName      : 파일경로에서 파일명을 가져옴
+         * gf_getFileExt       : 파일 확장자를 가져옴
+         * gf_replaceAll	   : 입력된 문자열의 특정 문자를 변경
+         * gf_htmlToChars      : html형식의 문자열에서 태그문자를 특수문자로 변형
+         * gf_specToChars      : 특수문자가 들어있는 문자열에서 html형식의 문자로 변형
+         * gf_right            : 문자열의 오른쪽부분을 지정한 길이만큼 Return 함
+         * gf_left             : 문자열의 왼쪽부분을 지정한 길이만큼 Return 함
+         * gf_openPop		   : 팝업창 오픈
+         * gf_copyTxt		   : 텍스트 복사
+         * gf_setCookie		   : 쿠키 설정
+         * gf_isCapsLock	   : 쿠키 설정
+         */
+
+        function gf_getPathName(){
+        	return document.location.pathname;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+#banner {
+    background: url('https://picsum.photos/id/172/1280/600') no-repeat center bottom;
+    background-size: cover;
+    position: relative;
+}
+
+#gray_box {
+    position: absolute;
+    bottom: 0;
+    background: #000;
+    opacity: .5;
+    width: 100%;
+    height: 70px;
+}
+
+#greetings, #vision, #group, #map { margin-top: 5rem; }
+
+/* 배너 영역 */
+.banner {
+    height: 350px;
+    position: relative;
+}
+
+.banner h3 {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.banner .menu {
+    position: absolute;
+    bottom: 0;
+    width: 100%; height: 70px;
+    text-align: center;
+}
+
+.banner ul li { display: inline-block; }
+
+.banner ul li a {
+    color: #fff;
+    display: block;
+    padding: 25.3px 20px;
+}
+
+.banner ul li:hover { background: #fff; }
+.banner ul li:hover a { color: #000; }
+
+/* 인사말 영역 */
+.greetings .tab ul { text-align: center; }
+
+.greetings .tab ul li {
+    display: inline-block;
+    width: 25%;
+    margin-right: -4px;
+    background-color: #f1f1f1;
+}
+
+.greetings .tab ul li:first-child { border-radius: 40px 0 0 40px; }
+
+.greetings .tab ul li:last-child { border-radius: 0 40px 40px 0; }
+
+.greetings .tab ul li:hover {
+    background-color: #ffd246;
+    transition: all .5s;
+}
+
+.greetings .tab ul li.active { background-color: #ffd246; }
+
+.greetings .tab ul li a { display: block; padding: 20px 0; }
+
+.greetings .content .img { margin: 3rem 0; }
+.greetings .content .text { margin-bottom: 3rem;  text-align: left; }
+
+.greetings .tab { 
+    position: relative;
+    height: 900px;
+}
+.greetings .content {
+    position: absolute;
+    top: 3rem; left: 0;
+}
+
+/* 교육 목표 영역 */
+.vision .title h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 36px;
+}
+
+.vision .title h3:before {
+    content: '';
+    display: inline-block;
+    background: url('../img/icon01.png') no-repeat;
+    width: 12px;
+    height: 19px;
+    margin-right: 10px;
+}
+
+.vision .content1 { text-align: center; }
+
+.vision .goal2 ul {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.vision .goal2 ul li {
+    width: 20%;
+    border: 1px solid #82bed6;
+    border-top: 4px solid #0d7094;
+    border-radius: 0 0 5px 5px;
+    padding: 20px 10px;
+    margin-right: 3%;
+}
+
+.vision .goal2 ul li:last-child{ margin-right: 0; }
+
+.goal_img {
+    width: 80px; height: 80px;
+    padding: 35px 0;
+}
+.num { 
+    color: #9cc5cb;
+    font-size: 16px;
+    font-weight: bold;
+}
+.num1 { margin-bottom: 26px; }
+.num2 { margin-bottom: 16px; }
+.vs {
+    font-size: 18px;
+    font-weight: bold;
+}
+.vs1 { margin-bottom: 40px; }
+.vs2 { margin-bottom: 22px; }
+
+.vision .goal { margin-bottom: 50px; }
+
+/* 조직 영역 */
+.group img { margin-bottom: 50px; }
+
+/* 오시는 길 영역 */
+.map { height: 100%; }
+.map #map_con {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid #ccc;
+} 
+.map .desc { background: #fdedb8; padding: 2%; margin: 50px 0; }
+.map .desc ul li { padding: 5px 0; }
+.map .desc ul li:nth-child(3) { margin-left: 12px; }

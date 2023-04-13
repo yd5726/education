@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+#banner {
+    background: url('https://picsum.photos/id/172/1280/600') no-repeat center bottom;
+    background-size: cover;
+    position: relative;
+}
+
+#gray_box {
+    position: absolute;
+    bottom: 0;
+    background: #000;
+    opacity: .5;
+    width: 100%;
+    height: 70px;
+}
+
+#board { margin-top: 5rem; margin-bottom: 0.7rem; }
+
+/* 배너 영역 */
+.banner {
+    height: 350px;
+    position: relative;
+}
+
+.banner h3 {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.banner .menu {
+    position: absolute;
+    bottom: 0;
+    width: 100%; height: 70px;
+    text-align: center;
+}
+
+.banner ul li { display: inline-block; }
+
+.banner ul li a {
+    color: #fff;
+    display: block;
+    padding: 25.3px 20px;
+}
+
+.banner ul li:hover { background: #fff; }
+.banner ul li:hover a { color: #000; }
+
+/* 공지사항 영역 */
+.board .board_search_form .search_box { float: right; }
+
+.board .board_search_form .search_box .search_btn {
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    vertical-align: middle;
+    background: #444;
+    border: 1px solid transparent;
+    background-image: url('../img/icon06.png');
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    background-position: center;
+    cursor: pointer;
+}
+
+.board .board_search_form .search_box .reset_btn {
+    min-width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    background: #444;
+    color: #fff;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.board #listForm .board_total_count {
+    display: inline-block;
+    color: #444;
+}
+
+.board #listForm .board_total_count > b {
+    color: #006999;
+    font-weight: bold;
+}
+
+.board_total_count + .list_table {
+    margin-top: 5px;
+}
+
+.board #listForm .list_table {
+    width: 100%;
+    border-top: 2px solid #bbb;
+    border-bottom: 2px solid #bdbdbd;
+    background: #fff;
+    border-collapse : collapse; /* re : 테두리를 하나로 합쳐 표시 */
+    border-spacing : 0; /* re : border-collapse : separate를 사용해 셀들을 분리했을 경우, 인접한 셀 테두리 사이의 거리를 지정 */
+}
+
+.board #listForm .list_table thead { border-bottom: 1px solid #ddd; }
+.board #listForm .list_table tbody tr:nth-child(even) { background-color: #fbfbfb; }
+.board #listForm .list_table thead tr { background-color: #ececec; }
+.board #listForm .list_table th + th, .list_table td + td { border-left: 1px solid #ddd; }
+
+.board #listForm .list_table thead tr th {
+    padding: 15px 10px;
+    box-sizing: border-box;
+    color: #444;
+    text-align: center;
+}
+
+.board #listForm .list_table td {
+    padding: 15px 10px;
+    box-sizing: border-box;
+    color: #444;
+    text-align: center;
+    border: 1px solid #d7d7d7;
+}
+
+.board #listForm .list_table td:first-child { border-left: none; }
+.board #listForm .list_table td:nth-child(2) { text-align-last: left; }
+.board #listForm .list_table td:last-child { border-right: none; }
+
+.board #listForm .paging {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.board #listForm .paging .page_btn.current_page {
+    border-color: #006999;
+    background: #006999;
+}
+
+.board #listForm .paging .page_btn {
+    display: inline-block;
+    width: 30px;
+    vertical-align: middle;
+    border: 1px solid #e8e8e8;
+    box-sizing: border-box;
+}
+
+.board #listForm .paging .page_btn span {
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    color: #666;
+    position: relative;
+    text-align: center;
+}
+
+.board #listForm .paging .page_btn.current_page span { color: #fff; }
+
+.board #listForm .paging .page_btn .lbtn_img { width: 30px; height: 30px; vertical-align: middle; }
+
+.tit > a { display: block; }

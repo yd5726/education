@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+/* 햄버거 메뉴 */ 
+#mNav {
+    display: none;
+    position: absolute; 
+    top: 14px; right: 18px;
+}
+
+.ham {
+    display: block; 
+    width: 25px; height: 10px;
+    padding: 15px 10px 10px 10px;
+}
+
+.ham span {
+    display: block;
+    width: 25px; height: 4px;
+    background: #000;
+    position: relative;
+    border-radius: 3px;
+    transition: all .3s;
+}
+
+.ham span:before{
+    content: '';
+    width: 25px; height: 4px;
+    background: #000;
+    position: absolute;
+    left: 0; bottom: -7px;
+    border-radius: 3px;
+    transition: all .3s;
+}
+
+.ham span:after{
+    content: '';
+    width: 25px; height: 4px;
+    background: #000;
+    position: absolute;
+    left: 0; top: -7px;
+    border-radius: 3px;
+    transition: all .3s;
+}
+
+#mNav.show .ham span { background: #fff; }
+#mNav.show .ham span:before{ top: 0; transform: rotate(45deg); transition: all .3s; }
+#mNav.show .ham span:after{ top: 0; transform: rotate(-45deg); transition: all .3s; }
+
+.mNav.show { display: block; }
+.mNav:not(.show){ display: none; }
+
+.mNav ul li {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mNav ul li:last-child { border: none; }
+
+#header{
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background: #fff;
+}
+
+/* header */
+.header { padding: 5px 0; }
+.header h1 { 
+    display: inline-block;
+    margin: 15px 0;
+}
+
+.header .edu_logo {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+    color: #444;
+}
+
+.header .nav { float: right; }
+.header .nav ul, .header .nav ul li { float: left; }
+
+.header .nav ul:first-child li { margin: 15px 15px 15px 0; }
+
+.header .nav ul li a {
+    display: block;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.header .nav .loginJoin {
+    background: #006999;
+    border-radius: 50px;
+}
+
+.header .nav .loginJoin li { 
+    position: relative;
+    padding: 15px;
+}
+.header .nav .loginJoin li:first-child:after {
+    position: absolute;
+    content: '';
+    width: 1px; 
+    height: 18px; 
+    background: #fff;
+    top: 19px; right: 0;
+}
